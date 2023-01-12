@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Bohlhalter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/5ec57145d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Comfortaa:wght@300;500;700&family=Raleway:wght@100;500&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+<body>
+
+    <section class="header">
+        <a href="index.html" class="logo">FB</a>
+
+        <div class="menu-desktop">
+            <a href="portifolio.html">Portifólio</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="menu-mobile-icon"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="clear"></div>
+
+        <div class="menu-mobile-container">
+            <a href="portifolio.html">Portifólio</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </section>
+
+    <section class="main" style="background-image: url('image/main.jpg'); "></section>
+
+    <div class="main-div">
+        <h1>O seu website,</h1>
+        <h2>Mais moderno</h2>
+    </div>
+
+    <!-- <div class="divider">
+        <hr><i class="fa-solid fa-angles-down"></i><hr>
+    </div> -->
+
+    <section class="trabalho">
+        <h1>Meu trabalho com sites</h1>
+        <div class="center">
+            <div class="trabalho-container">
+                <div class="trabalho-card">
+                    <img src="image/ecommerce.png">
+                    <h2>E-Commerce</h2>
+                </div>
+                <div class="trabalho-card">
+                    <img src="image/site-institucional.png">
+                    <h2>Institucional</h2>
+                </div>
+                <div class="trabalho-card">
+                    <img src="image/web-desing.png">
+                    <h2>Web-design</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-bottom: 100px;"class="clear"></div>
+
+    <section class="sobre-mim" id="sobre-mim">
+        <div class="center">
+            <div class="w60">
+                <img src="image/Dunuts2.png">
+                <div class="sobre-mim-txt">
+                    <h1>Fernando Bohlhalter</h1>
+                    <p>Web designer Freelancer</p>
+                    <h3> 
+                    Sou formado em técnico de Desenvolvimento de Sistemas pela ETEC Lauro Gomes. Atualmente estou cursando Bacharelado em 
+                    Ciências e tecnologias na Universidade Federal do ABC.
+                    <br><br>
+                    Sou muito proativo, criativo e perfeccionista e adoro trabalhar com programação e arte.
+                </h3>
+                </div>
+            </div>
+            <div class="w40">
+                <h2>Um pouco sobre mim</h2>
+                <ul>
+                    <li>Técnico em desenvolvimento de sistemas</li>
+                    <li>Web Designer</li>
+                    <li>Perfeccionista</li>
+                    <li>Atento a detalhes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <a href="portifolio.html">Portifólio</a>
+                <a>Sobre mim</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="separator"></div>
+            <div class="footer-socialmedia">
+                <a target="_blank" href="https://www.instagram.com/bohaswebdesign/"><i  class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/fernando-canos-4b9ab118a/"><i  class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+            </div>
+        </div>
+    </section>
+
+<script src="js/Jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".menu-desktop a").on('click', function(){
+            $("html, body").animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(".menu-mobile-container a").on('click', function(){
+            $("html, body").animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    });
+</script>
+<script>
+	//Menu responsivo
+	
+	$('.menu-mobile-icon i').click(function(){
+		$('.menu-mobile-container').slideToggle();
+
+	})
+</script>
+</body>
+</html>
